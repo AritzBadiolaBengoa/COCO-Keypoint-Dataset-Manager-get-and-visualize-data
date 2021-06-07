@@ -29,4 +29,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-Details included in the LICENCE.md file.
+Details included in the LICENCE.txt file.
