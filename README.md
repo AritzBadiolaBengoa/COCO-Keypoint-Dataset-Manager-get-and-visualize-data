@@ -21,7 +21,7 @@ pip install -r .\requirements.txt
 
 ## Usage
 
-The code is self-explanatory, and additional comments are included to clarify what tasks are performed or why are perfomed.
+The code is self-explanatory, and additional comments are included to clarify what tasks are performed and/or why are perfomed.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
