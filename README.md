@@ -14,7 +14,7 @@ Main Functions:
 
 *+Increasing the size of the bounding box, if it is possible, to include the part of the image in which any keypoint is located.*
 
-The project has been developed using *Jupyter Notebook*. 
+The project has been developed using *Jupyter Notebook* and has been tested in [Python 3.8](https://www.python.org/downloads/release/python-380/). 
 
 ## Installation
 First of all it is necessary to install [Jupyter Notebook](https://jupyter.org/install). Follow the instructions included in the link depending on the preferences of each one.
