@@ -1,0 +1,5 @@
+# Ignore the COCO dataset folder and all its files
+coco_dataset
+
+# Ignore the folder of checkpoints of Jupyter Notebook
+.ipynb_checkpoints
