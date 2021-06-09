@@ -45,7 +45,7 @@ Variables to use depending on what we want to get:
 - TRAIN_VAL: 0 means that we select the training dataset, 1 means that we select the validation dataset.
 - DRAW_NON_VISIBLE: There are some keypoints which are specified in the image but not visible, so, we decide if we want to draw them or not.
 
-The output of the application is the original image with the bounding box drawn, the resized image (256x192) of the bounding box area, the keypoints drawn in the resized image and some interesting information printed, such as the keypoints coordinates.
+The output of the application is the original image with the bounding box drawn, the resized image (256x192) of the bounding box area, the keypoints drawn in the resized image and some interesting information printed, such as the keypoint and bounding box coordinates.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
