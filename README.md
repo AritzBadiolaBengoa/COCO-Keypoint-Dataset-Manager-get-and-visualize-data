@@ -27,9 +27,25 @@ pip install -r .\requirements.txt
 ## Data
 *All the necessary data is downloaded using the code*, anyway if it is prefered to download the data from Google Drive (it can take a lot of time from the original sources) or there is any problem when downloading the data using the code, it is provided in the following [Google Drive link](https://drive.google.com/drive/folders/1SOfu3B0ZSVPOwl757eDOS_aN_XCV7GfP?usp=sharing). Include the files and folders as they are organized in the root folder. Extract the Rar files in the root, in "train2017" and "val2017" folders.
 
+**Basics about the COCO Keypoint dataset**:
+- There are 3 directories: annotations (with the json files with the annotations), train2017 (images from the training dataset) and val2017 (images from the validation dataset).
+- Each sample annotation (under the 'annotations' key) different attributes are specified:
+  - *image_id*: image filename.
+  - *iscrowd*: 0 (does not show a crowd), 1 (shows a crowd).
+  - *keypoints*: (x, y, visibility) of each of the 17 keypoints.
+    - visibility: 0 (not included), 1 (included but not visible), 2 (included and visible).
+  - *bbox*: bounding box of the person whose keypoints are specified (x, y, width, height).
+
 ## Usage
 
 The code is self-explanatory, and additional comments are included to clarify what tasks are performed and/or why are perfomed.
+
+Variables to use depending on what we want to get:
+- SAMPLE_N: when we want to load a specific sample from the training/validation dataset, we must specify the number of the sample.
+- TRAIN_VAL: 0 means that we select the training dataset, 1 means that we select the validation dataset.
+- DRAW_NON_VISIBLE: There are some keypoints which are specified in the image but not visible, so, we decide if we want to draw them or not.
+
+The output of the application is the original image with the bounding box drawn, the resized image (256x192) of the bounding box area, the keypoints drawn in the resized image and some interesting information printed, such as the keypoints coordinates.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
