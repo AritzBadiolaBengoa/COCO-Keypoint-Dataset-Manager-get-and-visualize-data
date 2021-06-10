@@ -19,7 +19,7 @@ The project has been developed using *Jupyter Notebook* and has been tested in [
 ## Installation
 First of all it is necessary to install [Jupyter Notebook](https://jupyter.org/install). Follow the instructions included in the link depending on the preferences of each one.
 
-Use the requirements.txt file and [pip](https://pip.pypa.io/en/stable/) to install all the required libraries automatically.
+Use the requirements.txt file and [pip](https://pip.pypa.io/en/stable/) to install all the required libraries automatically:
 
 ```bash
 pip install -r .\requirements.txt
@@ -29,7 +29,7 @@ pip install -r .\requirements.txt
 
 **Basics about the COCO Keypoint dataset**:
 - There are 3 directories: annotations (with the json files with the annotations), train2017 (images from the training dataset) and val2017 (images from the validation dataset).
-- Each sample annotation (under the 'annotations' key) different attributes are specified:
+- On each sample annotation (under the 'annotations' key) different attributes are specified:
   - *image_id*: image filename.
   - *iscrowd*: 0 (does not show a crowd), 1 (shows a crowd).
   - *keypoints*: (x, y, visibility) of each of the 17 keypoints.
